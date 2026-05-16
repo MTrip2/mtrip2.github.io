@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <style>
         /* CSS Reset & Font Import */
-        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
+        /* 1. Import Nunito with weights for Light, Regular, and Semi-Bold */
+        /* 1. Import EB Garamond with Regular, Medium, and Semi-Bold weights */
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
         html {
             scroll-behavior: smooth;
@@ -18,11 +20,38 @@
         body {
             background-color: #1b1b1b;
             color: rgba(255, 255, 255, 0.75);
-            font-family: "Source Sans Pro", sans-serif;
-            font-weight: 300;
-            line-height: 1.75;
+            /* 2. Apply Garamond globally */
+            font-family: "EB Garamond", serif;
+            font-size: 1.15em; /* Garamond naturally runs slightly small, so we bump the size up slightly */
+            font-weight: 400;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
+        }
+
+        /* 3. Literary, editorial styling for Sanskrit headings */
+        h1, h2 {
+            font-family: "EB Garamond", serif;
+            font-weight: 400; 
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        h3, header p {
+            font-family: "EB Garamond", serif;
+            font-weight: 200;
+            font-style: italic; /* Subtle italics on descriptions look gorgeous in Garamond */
+            letter-spacing: 0.05em;
+        }
+
+        /* 4. Elegant, spaced navigation elements */
+        .landing-nav a, .credits, .back-link {
+            font-family: "EB Garamond", serif;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-size: 0.85em;
         }
 
         /* 1. STAYS IN BACKGROUND */
@@ -144,7 +173,7 @@
         }
 
         .content-box {
-            max-width: 800px;
+            max-width: 1300px;
             width: 100%;
             z-index: 10;
         }
@@ -252,6 +281,15 @@
     <div id="bg">
         <div class="bg-slide"></div>
         <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
+        <div class="bg-slide"></div>
     </div>
 
     <div id="foreground-element">
@@ -263,14 +301,14 @@
             <header>
                 <h1>Mitalie Tripathi</h1>
                 <h3>She/Her</h3>
-                <p>Strategist &bull; Thinker &bull; Builder</p>
+                <p>Transdisciplinary Researcher &bull; Fugitive - in - the - Making &bull; Binky</p>
             </header>
             <nav class="landing-nav">
                 <a href="#about">About Me</a>
                 <a href="#work">Past Work</a>
-                <a href="#current">Thought in Motion</a>
+                <a href="#current">Thought-in-Movement</a>
                 <a href="#cv">CV</a>
-                <a href="#links">Cool Links</a>
+                <!-- <a href="#links">Cool Links</a> -->
             </nav>
         </div>
     </section>
@@ -279,8 +317,8 @@
         <div class="content-box">
             <h2>About Me</h2>
             <div class="card">
-                <p>I thrive at the intersection of logical architecture and creative strategy. With a background in [Your Field/Specialty], I spend my time deconstructing complex problems and rebuilding them into scalable, human-centric solutions.</p>
-                <p>Beyond the professional sphere, I am an avid [Hobby/Interest] and a firm believer in the power of continuous, multidisciplinary learning. This portfolio is a collection of where I've been, what I'm building, and the ideas that keep me up at night.</p>
+                <p> My research practice involves working at the intersections of Process Philosophy, Ecology, Decolonial Thought and Movement Studies. With a background in Economic Theory, Critical Theory and Philsophy, I am currently working on a project that attempts to articulate a process philosophic approaches to ecological violence. </p>
+                <p> In the future, I hope to start my own transdisciplinary research space that instigates critical interventions and resistance in the face of ecological violence. This portfolio is an attempt to articulate my iterative becomings.</p>
             </div>
             <a href="#home" class="back-link">&uarr; BACK TO TOP</a>
         </div>
@@ -290,9 +328,10 @@
         <div class="content-box">
             <h2>Past Work</h2>
             <div class="card">
-                <h3>Significant Project</h3>
-                <p>Led the digital transformation for a global client, improving retention by 30%.</p>
-                <p>Designed a new framework for cross-team collaboration in rapid-growth environments.</p>
+                <p><a href="https://drive.google.com/file/d/1ipk2pw3p2KlFkU1KhpBReYwp4UTPRF5d/view?usp=sharing" style="color: #fff;">Reading of an Encounter Through Simondon’s Process Philosophy</a></p>
+                <p><a href="https://www.india-seminar.com/2023/766/766-05%20MITALIE%20TRIPATHI.htm" style="color: #fff;">Temporal Ecologies</a></p>
+                <p><a href="https://docs.google.com/presentation/d/1A0lwuqEmCT30NmodC3Vgfm4mpuDlH-ER/edit?pli=1&slide=id.p1#slide=id.p1" style="color: #fff;">Theorising Multiple Ecologies</a></p>
+                <p><a href="https://drive.google.com/file/d/1cK6vwQ_3NdF0RcSmlvVrSB6lTJHHPNjq/view?usp=sharing" style="color: #fff;">Formulating Jason Mohaghegh's Manic Methodology</a></p>
             </div>
             <a href="#home" class="back-link">&uarr; BACK TO TOP</a>
         </div>
@@ -302,8 +341,12 @@
         <div class="content-box">
             <h2>Thought in Motion</h2>
             <div class="card">
-                <p>Currently synthesizing research on the impact of generative AI on cognitive workflows.</p>
-                <p>Building a prototype for a minimalist personal knowledge management system.</p>
+                <p>
+                    <a href="https://drive.google.com/file/d/15l4c6OqNg_2aRutdYYge6ZLqOYc9ef-3/view?usp=sharing" 
+                        style="display: inline-block; color: #fff; border: 1px solid #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px;">
+                        Process Philosophic Approaches to Ecological Violence: Thinking-with A.N. Whitehead, Fred Moten and E. Glissant.
+                    </a>
+                </p>           
             </div>
             <a href="#home" class="back-link">&uarr; BACK TO TOP</a>
         </div>
@@ -313,16 +356,13 @@
         <div class="content-box">
             <h2>CV</h2>
             <div class="card">
-                <p><strong>Experience:</strong> Senior Strategist @ TechCorp | Strategy Consultant @ DesignLab</p>
-                <p><strong>Education:</strong> MS in Information Systems | BS in Computer Science</p>
-                <br>
-                <a href="cv.pdf" style="color: #fff; border: 1px solid #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px;">Download PDF</a>
+                <center> <a href="https://drive.google.com/file/d/1t73iH9wTFTBOJrRFnE5NtZuJyG_pmtBe/view?usp=sharing" style="color: #fff; border: 1px solid #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px;">Download PDF</a> </center>
             </div>
             <a href="#home" class="back-link">&uarr; BACK TO TOP</a>
         </div>
     </section>
 
-    <section id="links">
+    <!-- <section id="links">
         <div class="content-box">
             <h2>Cool Links</h2>
             <div class="card" style="text-align: center;">
@@ -331,7 +371,7 @@
             </div>
             <a href="#home" class="back-link">&uarr; BACK TO TOP</a>
         </div>
-    </section>
+    </section> -->
 
 </body>
 </html>
